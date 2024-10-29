@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #A7CEF5, #FFB3E4);
+}
+.landing {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.animation-container {
+    position: relative;
+}
+
+.bear-animation {
+    width: 200px;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.badge img {
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+/* Proposal Section Styling */
+.proposal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #FF8ED0, #FFC3A0);
+    width: 100%;
+    height: 100vh;
+}
+
+.proposal-content h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.heart-animation {
+    font-size: 5rem;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.yes-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #FF6A6A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.yes-btn:hover {
+    background-color: #FF4C4C;
+}
+
+.emoji {
+    animation: emoji-fade 2s infinite;
+}
+
+@keyframes emoji-fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
